@@ -9,6 +9,7 @@
   "author": "gargshantnu",
   "license": "ISC",
   "dependencies": {
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "yargs": "^17.7.2"
   }
 }
