@@ -7,11 +7,33 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Import",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/app.js"
-        }
+            "program": "${workspaceFolder}/app.js",
+            "args": ["import", "--file", "contacts.csv"],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Search Name",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/app.js",
+            "args": ["search", "--name", "John"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Search Phone",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/app.js",
+            "args": ["search", "--phone", "555-1234"]
+        },
     ]
 }
